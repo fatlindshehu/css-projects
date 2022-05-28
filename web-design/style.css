@@ -60,6 +60,14 @@ h2 {
 .btn:active {
   background-color: #099268;
 }
+.btn .btn--big {
+  font-size: 18px;
+  padding: 16px;
+}
+.btn .btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
+}
 /* ------------------------ */
 /* COMPONENT STYLES */
 /* ------------------------ */
