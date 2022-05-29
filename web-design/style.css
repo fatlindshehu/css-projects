@@ -5,10 +5,12 @@ SPACING SYSTEM (px)
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
-/*
-Main Color: #087f5b
-Grey Color: #343a40
+
+/* 
+MAIN COLOR: #087f5b
+GREY COLOR: #343a40
 */
+
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +23,7 @@ Grey Color: #343a40
 body {
   font-family: "Inter", sans-serif;
   color: #343a40;
+  border-bottom: 8px solid #087f5b;
 }
 
 .container {
@@ -30,13 +33,14 @@ body {
 
 header,
 section {
-  margin-bottom: 48px;
+  margin-bottom: 96px;
 }
 
 h2 {
   margin-bottom: 48px;
   font-size: 36px;
   letter-spacing: -0.5px;
+  /* 24 / 30 / 36 */
 }
 
 .grid-3-cols {
@@ -44,6 +48,7 @@ h2 {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 80px;
 }
+
 .btn:link,
 .btn:visited {
   background-color: #087f5b;
@@ -51,20 +56,22 @@ h2 {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 18px;
-  padding: 16px 32px;
+
   display: inline-block;
+  border-radius: 100px;
 }
 
 .btn:hover,
 .btn:active {
   background-color: #099268;
 }
-.btn .btn--big {
+
+.btn--big {
   font-size: 18px;
-  padding: 16px;
+  padding: 16px 32px;
 }
-.btn .btn--small {
+
+.btn--small {
   font-size: 14px;
   padding: 8px 12px;
 }
@@ -85,12 +92,14 @@ header {
 }
 
 h1 {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   font-size: 44px;
   line-height: 1.1;
   letter-spacing: -1px;
-}
+  /* 44 / 52 / 62 */
 
+  /* text-shadow: 0 5px 5px rgba(0, 0, 0, 0.2); */
+}
 .header-text {
   margin-bottom: 24px;
   font-size: 18px;
@@ -170,8 +179,8 @@ h3 {
   justify-content: space-between;
   font-size: 20px;
 }
-
 footer {
   margin-bottom: 48px;
   font-size: 14px;
+  color: #495057;
 }
