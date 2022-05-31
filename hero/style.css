@@ -13,10 +13,20 @@ nav {
   font-weight: 700;
   display: flex;
   justify-content: space-between;
+  background-color: green;
 }
 h1 {
   font-size: 52px;
   margin-bottom: 32px;
+}
+h2 {
+  font-size: 44px;
+  margin-bottom: 48px;
+}
+section {
+  padding: 96px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
 }
 p {
   font-size: 20px;
