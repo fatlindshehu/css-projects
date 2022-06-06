@@ -188,6 +188,8 @@
 }
 .meal-tags {
   margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
 }
 .meal-content {
   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
