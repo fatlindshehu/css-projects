@@ -77,6 +77,7 @@ body {
   color: #cf711f;
   text-transform: uppercase;
   letter-spacing: 0.75px;
+  margin-bottom: 1.6rem;
 }
 
 .btn:link,
@@ -112,8 +113,19 @@ body {
   box-shadow: inset 0 0 0 0.3rem #fff;
   color: #555;
 }
-.margin-right-sm {
-  margin-right: 1.6rem !important;
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.2s;
+}
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
 }
 
 .container {
@@ -137,4 +149,19 @@ body {
 }
 .grid--center-v {
   align-items: center;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+/*Helper classes*/
+.center-text {
+  text-align: center;
+}
+
+strong {
+  font-weight: 500;
 }
