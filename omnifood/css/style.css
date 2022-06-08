@@ -458,11 +458,10 @@
 .cta-form input::placeholder {
   color: #aaa;
 }
-.cta-form select {
-}
-.cta-form button {
-}
 .cta *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(232, 178, 131, 0.5);
+}
+.footer {
+  padding: 9.6rem 0;
 }
