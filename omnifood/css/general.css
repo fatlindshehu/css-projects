@@ -79,7 +79,7 @@ body {
   letter-spacing: 0.75px;
   margin-bottom: 1.6rem;
 }
-
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -90,6 +90,10 @@ body {
   font-weight: 600;
   /*Put transition on original CSS state*/
   transition: box-shadow background-color 0.3s;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.4s;
 }
 .btn--full:link,
 .btn--full:visited {
@@ -112,6 +116,18 @@ body {
   /*Trick to add border inside*/
   box-shadow: inset 0 0 0 0.3rem #fff;
   color: #555;
+}
+.btn-form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+.btn-form:hover {
+  background-color: #fdf2e9;
+  color: #45260a;
+  align-self: end;
+  padding: 1.2rem;
 }
 .link:link,
 .link:visited {
@@ -170,6 +186,10 @@ body {
   align-items: center;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }
