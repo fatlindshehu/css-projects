@@ -16,7 +16,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #777;
-  padding: 48px;
+  padding: 36px;
 }
 .header {
   height: 95vh;
@@ -28,16 +28,39 @@ body {
     url(/img/hero.jpg);
   background-size: cover;
   background-position: top;
-  clip-path: polygon(
-    50% 0%,
-    80% 10%,
-    100% 4%,
-    100% 70%,
-    80% 90%,
-    50% 70%,
-    20% 90%,
-    0% 70%,
-    0 4%,
-    20% 10%
-  );
+  clip-path: polygon(50% 0%, 100% 0, 100% 65%, 0 93%, 0 0);
+  position: relative;
+}
+
+.logo-box {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.logo {
+  height: 35px;
+}
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.heading-primary {
+}
+.heading-primary-main,
+.heading-primary-sub {
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+}
+.heading-primary-main {
+  font-size: 60px;
+  letter-spacing: 35px;
+}
+.heading-primary-sub {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 17.5px;
 }
