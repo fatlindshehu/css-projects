@@ -34,44 +34,45 @@ body {
   background-position: top;
   clip-path: polygon(50% 0%, 100% 0, 100% 65%, 0 93%, 0 0);
   position: relative;
+  &__logo-box {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+  }
+  &____logo {
+    height: 3.5rem;
+  }
+  &____text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 }
 
-.header__logo-box {
-  position: absolute;
-  top: 5rem;
-  left: 5rem;
-}
-.header__logo {
-  height: 3.5rem;
-}
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
 .heading-primary {
   color: $color-white;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
-}
-.heading-primary--main,
-.heading-primary--sub {
-  display: block;
-  font-weight: 400;
-}
-.heading-primary--main {
-  font-size: 6rem;
-  letter-spacing: 3.5rem;
-  animation: moveInLeft 1s ease-in-out;
-}
-.heading-primary--sub {
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 1.75rem;
-  animation: moveInRight 1s ease-in-out;
+
+  &--main,
+  &--sub {
+    display: block;
+    font-weight: 400;
+  }
+  &--main {
+    font-size: 6rem;
+    letter-spacing: 3.5rem;
+    animation: moveInLeft 1s ease-in-out;
+  }
+  &--sub {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    animation: moveInRight 1s ease-in-out;
+  }
 }
 
 @keyframes moveInLeft {
@@ -111,52 +112,52 @@ body {
   }
 }
 
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.5rem 4rem;
-  border-radius: 10rem;
-  display: inline-block;
-  transition: all 0.2s;
-  position: relative;
-}
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-}
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-}
-.btn--white {
-  background-color: $color-white;
-  color: $color-grey-dark;
-}
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    display: inline-block;
+    transition: all 0.2s;
+    position: relative;
+  }
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-dark;
+    &::after {
+      background-color: $color-white;
+    }
+  }
 
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s;
-}
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
 
-.btn--white::after {
-  background-color: $color-white;
-}
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
-
-.btn--animated {
-  animation: moveInBottom 1s ease-in-out 0.75s;
-  animation-fill-mode: backwards;
+  &--animated {
+    animation: moveInBottom 1s ease-in-out 0.75s;
+    animation-fill-mode: backwards;
+  }
 }
