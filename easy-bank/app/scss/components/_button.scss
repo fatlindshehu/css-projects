@@ -1,0 +1,16 @@
+//Buttons
+.button {
+  padding: 1.6rem 3rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  border: 0;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from($limeGreen),
+    to($brightCyan)
+  );
+  color: $white;
+  font-weight: 400;
+}
