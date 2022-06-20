@@ -52,12 +52,14 @@ a:hover {
 .header__links a {
   font-size: 1.4rem;
   color: #9698a6; }
+  .header__links a:not(:last-child) {
+    margin-right: 32px; }
 
 .header__cta {
   font-size: 1.4rem; }
 
 .button {
-  padding: 1.6rem 3rem;
+  padding: 1.5rem 3.5rem;
   border-radius: 10rem;
   cursor: pointer;
   border: 0;
