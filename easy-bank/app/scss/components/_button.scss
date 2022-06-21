@@ -4,13 +4,7 @@
   border-radius: 10rem;
   cursor: pointer;
   border: 0;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from($limeGreen),
-    to($brightCyan)
-  );
+  background-image: linear-gradient(to right, $limeGreen, $brightCyan);
   color: $white;
   font-weight: 400;
 }
