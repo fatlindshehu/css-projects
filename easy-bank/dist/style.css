@@ -38,14 +38,6 @@ a:visited,
 a:hover {
   text-decoration: none; }
 
-.header .overlay {
-  position: fixed;
-  top: 6rem;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(#2d314d, transparent); }
-
 .header.open .header__menu > span:first-child {
   transform: rotate(45deg); }
 
@@ -54,6 +46,14 @@ a:hover {
 
 .header.open .header__menu > span:last-child {
   transform: rotate(-45deg); }
+
+.header .overlay {
+  position: fixed;
+  top: 6rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(#2d314d, transparent); }
 
 .header nav {
   padding: 17px 24px; }
