@@ -1,5 +1,8 @@
 .header {
   &.open {
+    .overlay {
+      animation: fade-in 300ms ease-in-out forwards;
+    }
     .header__menu {
       > span:first-child {
         transform: rotate(45deg);
@@ -13,6 +16,7 @@
     }
   }
   .overlay {
+    display: none;
     position: fixed;
     top: 6rem;
     right: 0;
