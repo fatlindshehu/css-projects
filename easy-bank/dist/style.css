@@ -38,6 +38,23 @@ a:visited,
 a:hover {
   text-decoration: none; }
 
+.header .overlay {
+  position: fixed;
+  top: 6rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(#2d314d, transparent); }
+
+.header.open .header__menu > span:first-child {
+  transform: rotate(45deg); }
+
+.header.open .header__menu > span:nth-child(2) {
+  opacity: 0; }
+
+.header.open .header__menu > span:last-child {
+  transform: rotate(-45deg); }
+
 .header nav {
   padding: 17px 24px; }
 
@@ -54,15 +71,6 @@ a:hover {
   transform-origin: 2px 2px; }
   .header__menu > span:not(:last-child) {
     margin-bottom: 3px; }
-
-.header__menu.open > span:first-child {
-  transform: rotate(45deg); }
-
-.header__menu.open > span:nth-child(2) {
-  opacity: 0; }
-
-.header__menu.open > span:last-child {
-  transform: rotate(-45deg); }
 
 .header__links a {
   position: relative;
@@ -92,14 +100,6 @@ a:hover {
   transition: opacity 300ms ease-in-out; }
   .header__cta:hover {
     opacity: 0.75; }
-
-.overlay {
-  position: fixed;
-  top: 6rem;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(#2d314d, transparent); }
 
 .button {
   padding: 1.5rem 3.5rem;

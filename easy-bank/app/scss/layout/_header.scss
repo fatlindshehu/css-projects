@@ -1,4 +1,25 @@
 .header {
+  .overlay {
+    position: fixed;
+    top: 6rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient($darkBlue, transparent);
+  }
+  &.open {
+    .header__menu {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
   nav {
     padding: 17px 24px;
   }
@@ -19,17 +40,6 @@
       transform-origin: 2px 2px;
       &:not(:last-child) {
         margin-bottom: 3px;
-      }
-    }
-    &.open {
-      > span:first-child {
-        transform: rotate(45deg);
-      }
-      > span:nth-child(2) {
-        opacity: 0;
-      }
-      > span:last-child {
-        transform: rotate(-45deg);
       }
     }
   }
@@ -72,11 +82,5 @@
     }
   }
 }
-.overlay {
-  position: fixed;
-  top: 6rem;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient($darkBlue, transparent);
-}
+
+//hamburger open styles
