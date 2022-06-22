@@ -26,13 +26,10 @@ html {
 
 @keyframes fade-in {
   from {
-    display: none;
     opacity: 0; }
   1% {
-    display: block;
     opacity: 0; }
   to {
-    display: block;
     opacity: 1; } }
 
 body {
@@ -50,6 +47,7 @@ a:hover {
   text-decoration: none; }
 
 .header.open .overlay {
+  display: block;
   animation: fade-in 300ms ease-in-out forwards; }
 
 .header.open .header__menu > span:first-child {
