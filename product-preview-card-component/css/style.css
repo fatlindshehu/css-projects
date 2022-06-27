@@ -16,6 +16,7 @@ body {
   height: 100vh; }
 
 .main-component {
+  display: flex;
   width: 60rem;
   height: 45rem;
   position: absolute;
@@ -25,8 +26,7 @@ body {
   overflow: hidden;
   border-radius: 1rem;
   background-color: #fff;
-  color: #7d7e83;
-  display: flex; }
+  color: #7d7e83; }
   .main-component img {
     width: 30rem; }
   .main-component .product-info {
@@ -84,3 +84,19 @@ body {
         margin-right: 5px; }
     .main-component .product-info .btn:visited {
       color: #fff; }
+
+@media (max-width: 55em) {
+  .main-component {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    height: 61rem;
+    position: absolute; }
+    .main-component img {
+      width: 35rem;
+      height: 23rem; }
+    .main-component .product-info {
+      width: 85%;
+      margin: 2.3rem; }
+      .main-component .product-info .category {
+        margin-bottom: 2.1rem; } }

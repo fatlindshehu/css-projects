@@ -3,6 +3,7 @@
   height: 100vh;
 }
 .main-component {
+  display: flex;
   width: 60rem;
   height: 45rem;
   position: absolute;
@@ -13,7 +14,6 @@
   border-radius: 1rem;
   background-color: #fff;
   color: #7d7e83;
-  display: flex;
   img {
     width: 30rem;
   }
@@ -80,6 +80,27 @@
     }
     .btn:visited {
       color: #fff;
+    }
+  }
+}
+
+@media (max-width: 55em) {
+  .main-component {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    height: 61rem;
+    position: absolute;
+    img {
+      width: 35rem;
+      height: 23rem;
+    }
+    .product-info {
+      width: 85%;
+      margin: 2.3rem;
+      .category {
+        margin-bottom: 2.1rem;
+      }
     }
   }
 }
