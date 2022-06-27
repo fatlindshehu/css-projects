@@ -47,7 +47,7 @@ body {
     .main-component .product-info .description {
       line-height: 1.7;
       margin-bottom: 3rem;
-      font-size: 1.2rem; }
+      font-size: 1.3rem; }
     .main-component .product-info .price {
       display: flex;
       gap: 3rem;
@@ -75,12 +75,12 @@ body {
       font-weight: 700;
       font-size: 1.2rem;
       text-decoration: none; }
-      .main-component .product-info .btn:link:hover, .main-component .product-info .btn:link:visited,
-      .main-component .product-info .btn:active:hover,
-      .main-component .product-info .btn:active:visited {
-        color: #fff !important;
+      .main-component .product-info .btn:link:hover,
+      .main-component .product-info .btn:active:hover {
         background-color: #2b5747; }
       .main-component .product-info .btn:link .cart,
       .main-component .product-info .btn:active .cart {
         width: 15px;
         margin-right: 5px; }
+    .main-component .product-info .btn:visited {
+      color: #fff; }

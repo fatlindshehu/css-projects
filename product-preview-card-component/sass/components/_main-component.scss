@@ -37,7 +37,7 @@
     .description {
       line-height: 1.7;
       margin-bottom: 3rem;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
     .price {
       display: flex;
@@ -70,16 +70,16 @@
       font-weight: 700;
       font-size: 1.2rem;
       text-decoration: none;
-
-      &:hover,
-      &:visited {
-        color: #fff !important;
+      &:hover {
         background-color: #2b5747;
       }
       .cart {
         width: 15px;
         margin-right: 5px;
       }
+    }
+    .btn:visited {
+      color: #fff;
     }
   }
 }
