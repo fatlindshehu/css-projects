@@ -2,7 +2,7 @@
   &.open {
     .overlay {
       display: block;
-      animation: fade-in 300ms ease-in-out forwards;
+      animation: fade-out 300ms ease-in-out forwards;
     }
     .header__menu {
       > span:first-child {
@@ -17,13 +17,13 @@
     }
   }
   .overlay {
-    display: none;
     position: fixed;
     top: 6rem;
     right: 0;
     bottom: 0;
     left: 0;
     background-image: linear-gradient($darkBlue, transparent);
+    animation: fade-out 300ms ease-in-out forwards;
   }
   nav {
     padding: 17px 24px;

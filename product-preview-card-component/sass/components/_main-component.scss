@@ -1,15 +1,14 @@
 .container {
   position: relative;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main-component {
   display: flex;
   width: 60rem;
   height: 45rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   overflow: hidden;
   border-radius: 1rem;
   background-color: #fff;
@@ -84,7 +83,10 @@
   }
 }
 
-@media (max-width: 55em) {
+@media (max-width: 35em) {
+  .cart {
+    display: none;
+  }
   .main-component {
     display: flex;
     flex-direction: column;
