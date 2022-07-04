@@ -1,3 +1,5 @@
+@use "util" as u;
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -7,18 +9,29 @@
   margin-inline: auto;
   gap: 40px;
 
-  @media (min-width: 900px) {
+  @include u.breakpoint(large) {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
   }
+
   &__main,
   &__sidebar {
     padding: 40px;
   }
   &__main {
     background-color: var(--main-background-color);
+    @include u.breakpoint(medium) {
+      background-color: green;
+    }
+    @include u.breakpoint(large) {
+      background-color: orange;
+    }
   }
   &__sidebar {
     background-color: var(--side-background-color);
+
+    @include u.breakpoint-down(large) {
+      text-align: center;
+    }
   }
 }
