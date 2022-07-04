@@ -2,6 +2,9 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
+  // max-width: 1000px;
+  width: min(100% - 40px, 1000px);
+  margin-inline: auto;
   gap: 40px;
 
   @media (min-width: 900px) {
@@ -13,9 +16,9 @@
     padding: 40px;
   }
   &__main {
-    background-color: hsl(240, 99%, 33%);
+    background-color: var(--main-background-color);
   }
   &__sidebar {
-    background-color: hsla(300, 40%, 52%, 0.678);
+    background-color: var(--side-background-color);
   }
 }
